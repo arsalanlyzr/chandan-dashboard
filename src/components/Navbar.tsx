@@ -5,10 +5,7 @@ import { cn } from "@/lib/utils";
 export const Navbar = () => {
   const location = useLocation();
 
-  const navItems = [
-    { path: "/", label: "Home", icon: Home },
-    { path: "/chat-history", label: "Chat History", icon: MessageCircle },
-  ];
+  const navItems = [{ path: "/", label: "Home", icon: Home }];
 
   return (
     <nav className="navbar-gradient h-16 px-6 flex items-center justify-between sticky top-0 z-50">
@@ -18,7 +15,7 @@ export const Navbar = () => {
           <MessageCircle className="w-5 h-5 text-primary-foreground" />
         </div>
         <h1 className="text-xl font-semibold text-foreground">
-          Emudhra Analytics Dashboard
+          Analytics Dashboard
         </h1>
       </div>
 
