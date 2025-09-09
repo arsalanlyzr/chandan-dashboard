@@ -1,0 +1,276 @@
+/* Reset all form spacing */
+.hsfc-Form,
+.hsfc-Form *,
+.hsfc-Renderer,
+.hsfc-Renderer *,
+.hsfc-FormWrapper,
+.hsfc-FormWrapper *,
+.hsfc-Step,
+.hsfc-Step *,
+.hsfc-Step_Content * {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+/* Form fields container */
+.hsfc-Form {
+  width: 100% !important;
+}
+
+/* Individual form fields */
+.hsfc-Form .hs-form-field {
+  width: 100% !important;
+  margin-bottom: 10px !important;
+}
+
+.hsfc-Form input,
+.hsfc-Form textarea,
+.hsfc-Form select {
+  width: 100% !important;
+  padding: 8px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  background: white !important;
+  height: 40px !important;
+  box-sizing: border-box !important;
+}
+
+/* Labels */
+.hsfc-Form label {
+  margin-bottom: 2px !important;
+}
+
+/* Phone field container */
+.hsfc-PhoneField {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.hsfc-PhoneInput {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Flag and caret dropdown button */
+.hsfc-PhoneInput__FlagAndCaret {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 16px !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  background: white !important;
+  min-width: 100px !important;
+  height: 40px !important;
+  box-sizing: border-box !important;
+}
+
+.hsfc-PhoneInput__FlagAndCaret__Flag {
+  font-size: 16px !important;
+  padding-right: 4px !important;
+}
+
+.hsfc-PhoneInput__FlagAndCaret__Caret {
+  margin-left: auto !important;
+}
+
+.hsfc-DropdownOptions__Search {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.hsfc-DropdownInput__Caret {
+  padding-left: 50px !important;
+}
+
+.hsfc-DropdownOptions {
+  position: absolute;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+.hsfc-DropdownOptions__Search {
+  padding: 12px 16px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+/* List of country options */
+.hsfc-DropdownOptions__List {
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+}
+.hsfc-DropdownOptions__List__ListItem {
+  padding: 10px 16px; /* Increased padding */
+  cursor: pointer;
+}
+
+.hsfc-DropdownOptions__List__ListItem:hover {
+  background-color: #f3f4f6;
+}
+
+/* Selected country option */
+.hsfc-DropdownOptions__List__ListItem--selected {
+  background-color: #e5e7eb;
+}
+
+/* Required field label */
+.hsfc-FieldLabel {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600 !important;
+}
+
+.hsfc-FieldLabel__RequiredIndicator {
+  color: #ef4444;
+  margin-left: 4px;
+}
+
+.hsfc-Row {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  margin-bottom: 16px !important;
+  width: 100% !important;
+}
+
+/* Dropdown caret button */
+.hsfc-DropdownInput__Caret {
+  position: absolute !important;
+  right: 12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  cursor: pointer !important;
+  padding: 8px !important;
+}
+
+.hsfc-DropdownOptions__List__ListItem {
+  padding: 12px 16px !important;
+  cursor: pointer !important;
+}
+
+/* Search input in dropdown */
+.hsfc-DropdownOptions__Search .hsfc-TextInput {
+  padding: 8px 16px !important;
+  margin: 8px !important;
+  width: calc(100% - 16px) !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px !important;
+}
+
+/* Submit button  */
+.hsfc-Button {
+  padding: 8px 8px !important;
+  width: 100% !important;
+  background-color: #673695 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease !important;
+  margin-top: 16px !important;
+  height: auto !important;
+  text-align: center !important;
+}
+
+.hsfc-Button:hover {
+  background-color: #5a2e82 !important;
+}
+
+.hsfc-Button:active {
+  background-color: #4d2670 !important;
+}
+
+/* Focus state for button */
+.hsfc-Button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(103, 54, 149, 0.3) !important;
+}
+/* Force all form fields to be visible */
+.hsfc-Row[style*="display:none"] {
+  display: block !important;
+}
+
+.hsfc-TextField[style*="display:none"],
+.hsfc-PhoneField[style*="display:none"],
+.hsfc-DropdownField[style*="display:none"],
+.hsfc-DataPrivacyField[style*="display:none"] {
+  display: block !important;
+}
+
+/* Reduce spacing between all form rows */
+.hsfc-Row {
+  margin-bottom: 12px !important;
+}
+
+/* Style for the rich text link */
+.hsfc-RichText {
+  margin: 8px 0 !important;
+}
+
+.hsfc-RichText a {
+  color: #673695 !important;
+  font-weight: 500 !important;
+  text-decoration: underline !important;
+}
+/* here */
+
+/* DROPDOWN INPUT - MULTI-LINE TEXT SOLUTION */
+/* Make dropdown input container flexible height */
+.hsfc-DropdownInput {
+  position: relative !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  min-height: 40px !important;
+  height: auto !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px !important;
+  background: white !important;
+  box-sizing: border-box !important;
+  padding: 8px 40px 8px 12px !important;
+}
+
+/* Make the input field wrap text to new lines */
+.hsfc-DropdownInput .hsfc-TextInput {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  resize: none !important;
+  box-sizing: border-box !important;
+}
+/* Custom red error message */
+.custom-error {
+  color: #dc2626 !important; /* Tailwind red-600 */
+  font-size: 13px !important;
+  margin-top: 4px;
+}
+
+/* Red border on required fields */
+.custom-error-border {
+  border: 1px solid #dc2626 !important;
+  box-shadow: 0 0 0 1px #dc2626 !important;
+}
